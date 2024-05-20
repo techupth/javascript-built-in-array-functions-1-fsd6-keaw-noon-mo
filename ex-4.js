@@ -8,9 +8,14 @@ const todos = [
 
 function getCompletedTodo(todos) {
   // Start coding here
+  return todos.filter((onlyTrue) => {
+    if (onlyTrue.completed === true) {
+      return true;
+    }
+  });
 }
 
-getCompletedTodo(todos);
+console.log(getCompletedTodo(todos));
 
 /* 
 	Output:
